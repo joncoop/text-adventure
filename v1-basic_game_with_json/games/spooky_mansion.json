@@ -1,0 +1,47 @@
+{
+    "title": "The Spooky Mansion",
+    "author": "Jon Cooper",
+    "start": 0,
+    "locations": [
+      {
+        "id": 0,
+        "description": "You are in front of a spooky house.",
+        "options": {
+          "Go inside": 1,
+          "Just stand there": 0
+        }
+      },
+      {
+        "id": 1,
+        "description": "You are inside a spooky house.",
+        "options": {
+          "Explore": 2,
+          "Leave": 0
+        }
+      },
+      {
+        "id": 2,
+        "description": "You see a monster.",
+        "options": {
+          "Run away": 3,
+          "Fight": 4
+        }
+      },
+      {
+        "id": 3,
+        "description": "You fell down and the monster got you. You are dead.",
+        "options": {
+          "Play again": 0,
+          "Quit": -1
+        }
+      },
+      {
+        "id": 4,
+        "description": "You defeated the monster. You win!",
+        "options": {
+          "Play again": 0,
+          "Quit": -1
+        }
+      }
+    ]
+  }
