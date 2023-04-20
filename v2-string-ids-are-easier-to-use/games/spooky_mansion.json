@@ -1,0 +1,127 @@
+{
+  "title": "The Spooky Mansion",
+  "author": "Jon Cooper",
+  "year": "2023",
+  "start": "Dirt road",
+  "locations": [
+    {
+      "id": "Dirt road",
+      "description1": "You are standing on a quiet dirt road in front of a spooky mansion.",
+      "options": {
+        "Go to the porch": "Porch"
+      }
+    },
+    {
+      "id": "Porch",
+      "description1": "You go on the front porch and knock on the door. No one answers. The door is slightly ajar.",
+      "description2": "You are on the front porch. The door is slightly ajar.",
+      "options": {
+        "Go in the door": "Entryway",
+        "Leave": "Dirt road"
+      }
+    },
+    {
+      "id": "Entryway",
+      "description1": "As you enter, the front door slams shut and locks behind you. Now you are inside a large foyer. There is a stairwell ahead. There are rooms to the east and west of you. A dead body is lying on the floor.",
+      "description2": "You are inside a large foyer. There is a stairwell ahead. There are rooms to the east and west of you. A dead body is lying on the floor.",
+      "options": {
+        "Go west": "Kitchen",
+        "Go east": "Dining room",
+        "Go up the stairs": "Top stairs",
+        "Look at the body": "Dead body"
+      }
+    },
+    {
+      "id": "Dead body",
+      "description1": "You find a note on the body. The note says, 'Valuable jewels are hidden in this house. Finders keepers!'",
+      "options": {
+        "Look at the room": "Entryway"
+      }
+    },
+    {
+      "id": "Kitchen",
+      "description1": "You are in a kitchen.",
+      "options": {
+        "Go east": "Entryway"
+      }
+    },
+    {
+      "id": "Dining room",
+      "description1": "You are in a dining room.",
+      "options": {
+        "Go west": "Entryway"
+      }
+    },
+    {
+      "id": "Top stairs",
+      "description1": "You are in a hallway at the top of the stairs. The hallway goes north, east, and west.",
+      "options": {
+        "Go north": "Upstairs north hall",
+        "Go east": "Upstairs east hall",
+        "Go west": "Upstairs west hall",
+        "Go down the stairs": "Entryway"
+      }
+    },
+    {
+      "id": "Upstairs north hall",
+      "description1": "You are at the end of a hallway. There is a door in front of you.",
+      "options": {
+        "Go in the door": "North bedroom",
+        "Go south": "Top stairs"
+      }
+    },
+    {
+      "id": "Upstairs west hall",
+      "description1": "You are at the end of a hallway. There is a door in front of you.",
+      "options": {
+        "Go in the door": "West bedroom",
+        "Go east": "Top stairs"
+      }
+    },
+    {
+      "id": "Upstairs east hall",
+      "description1": "You are at the end of a hallway. There is a door in front of you.",
+      "options": {
+        "Go in the door": "Upstairs bathroom",
+        "Go west": "Top stairs"
+      }
+    },
+    {
+      "id": "North bedroom",
+      "description1": "You are in a bedroom.",
+      "options": {
+        "Leave room": "Upstairs north hall"
+      }
+    },
+    {
+      "id": "West bedroom",
+      "description1": "You are in a bedroom.",
+      "options": {
+        "Leave room": "Upstairs north hall"
+      }
+    },
+    {
+      "id": "Upstairs bathroom",
+      "description1": "You are in a bathroom.",
+      "options": {
+        "Leave room": "Upstairs east hall"
+      }
+    },
+    {
+      "id": "Lose",
+      "description1": "You have died. The game is over.",
+      "options": {
+        "Play again": "Front yard",
+        "Quit": "Quit"
+      }
+    },
+    {
+      "id": "Win",
+      "description1": "You win!",
+      "options": {
+        "Play again": "Front yard",
+        "Quit": "Quit"
+      }
+    }
+  ]
+}
