@@ -1,0 +1,176 @@
+{
+  "title": "The Spooky Mansion",
+  "author": "Jon Cooper",
+  "year": "2023",
+  "instructions": "Lorem ipsum",
+  "start": "Dirt road",
+    "locations": [
+    {
+      "id": "Dirt road",
+      "description1": "The sun is setting on a clear night under a full moon. You are standing on a quiet dirt road in front of an old, run-down mansion.",
+      "options": {
+        "go house": "Front door",
+        "go mansion": "Front door"
+      }
+    },
+    {
+      "id": "Front door",
+      "description1": "You go to the front porch and knock on the door. No one answers. The door is slightly ajar.",
+      "description2": "You are to the front porch. The door is slightly ajar.",
+      "options": {
+        "go door": "Entryway",
+        "go road": "Dirt road"
+      }
+    },
+    {
+      "id": "Entryway",
+      "description1": "As you enter, the front door slams shut and locks behind you. Now you are inside a large foyer. There is a staircase which leads up to the second floor. There are rooms to the east and west of you. A body is lying on the floor.",
+      "description2": "You are inside a large foyer. There is a staircase which leads up to the second floor. There are rooms to the east and west of you. A body is lying on the floor.",
+      "options": {
+        "go west": "Kitchen",
+        "go east": "Dining room",
+        "go up": "Top stairs",
+        "go stairs": "Top stairs",
+        "look body": "Dead body"
+      }
+    },
+    {
+      "id": "Dead body",
+      "description1": "The man is dead, but it is not clear why. You find a note on the body that says, 'Valuable jewels are hidden in this house. Finders keepers!'",
+      "options": {
+        "look room": "Entryway"
+      }
+    },
+    {
+      "id": "Kitchen",
+      "description1": "You are in a kitchen.",
+      "options": {
+        "go east": "Entryway"
+      }
+    },
+    {
+      "id": "Dining room",
+      "description1": "You are in a dining room.",
+      "options": {
+        "go west": "Entryway"
+      }
+    },
+    {
+      "id": "Top stairs",
+      "description1": "You are in a hallway at the top of the stairs. The hallway goes north, east, and west.",
+      "options": {
+        "go north": "Upstairs north hall",
+        "go east": "Upstairs east hall",
+        "go west": "Upstairs west hall",
+        "go down": "Entryway",
+        "go stairs": "Entryway"
+      }
+    },
+    {
+      "id": "Upstairs north hall",
+      "description1": "You are at the end of a hallway. There is a door to the north. The hallway extends to the south.",
+      "options": {
+        "go door": "North bedroom",
+        "go south": "Top stairs"
+      }
+    },
+    {
+      "id": "Upstairs west hall",
+      "description1": "You are at the end of a hallway. There is a door to the east. The hallway extends to the west.",
+      "options": {
+        "go door": "West bedroom",
+        "go east": "Top stairs"
+      }
+    },
+    {
+      "id": "Upstairs east hall",
+      "description1": "You are at the end of a hallway. There is a door to the west. The hallway extends to the east.",
+      "options": {
+        "go door": "Upstairs bathroom",
+        "go west": "Top stairs"
+      }
+    },
+    {
+      "id": "North bedroom",
+      "description1": "You are in a bedroom.",
+      "options": {
+        "go door": "Upstairs north hall"
+      }
+    },
+    {
+      "id": "East bedroom",
+      "description1": "You are in a bedroom.",
+      "options": {
+        "go door": "Upstairs north hall"
+      }
+    },
+    {
+      "id": "West bedroom",
+      "description1": "You are in a bedroom. On one wall there is a small closet. A small window looks outside to the west.",
+      "options": {
+        "go door": "Upstairs north hall",
+        "go closet": "West bedroom closet",
+        "look window": "West bedroom window"
+      }
+    },
+    {
+      "id": "West bedroom window",
+      "description1": "You see trees.",
+      "options": {
+        "look room": "West bedroom"
+      }
+    },
+    {
+      "id": "West bedroom closet",
+      "description1": "The closet is empty except for a small box on the top shelf and woman's coat which is hanging on the rack.",
+      "options": {
+        "look room": "West bedroom",
+        "look coat": "Woman's coat",
+        "look box": "Small box"
+      }
+    },
+
+    {
+      "id": "Woman's coat",
+      "description1": "Everything in the house is worn and dusty, but the coat appears to be very new and clean. Inside the left pocket, a tag sewn in with the letters 'FUNXR GUR OBK' written on it in pen.",
+      "options": {
+        "look room": "West bedroom",
+        "look closet": "West bedroom closet"
+      }
+    },
+    {
+      "id": "Small box",
+      "description1": "The box is empty.",
+      "options": {
+        "look room": "West bedroom",
+        "look closet": "West bedroom closet",
+        "shake box": "Hidden compartment"
+      }
+    },
+    {
+      "id": "Hidden compartment",
+      "description1": "You discover that the box has a false bottom. Inside, you see a small key.",
+      "description2": "There is a false bottom, but nothing is inside.",
+      "options": {
+        "look room": "West bedroom",
+        "look closet": "West bedroom closet",
+        "get key": "Small key"
+      }
+    },
+    {
+      "id": "Small key",
+      "description1": "You take the key and put it in your pocket and set the box back on the shelf just like you found it.",
+      "options": {
+        "look room": "West bedroom",
+        "look closet": "West bedroom closet"
+      }
+    },
+    {
+      "id": "Upstairs bathroom",
+      "description1": "You are in a bathroom.",
+      "options": {
+        "go door": "Upstairs east hall"
+      }
+    }
+  ]
+}
